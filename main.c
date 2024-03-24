@@ -13,12 +13,11 @@ int main() {
     struct gameobject obstaclesky = {750, 200, 0};
     struct gameobject obstacleground = {750, 300, 0};
     struct gameobject scorebord = {5, 5, 0};
-    unsigned char maingameloop = 1;
     int score = 0;
     InitWindow(800, 600, "Rare blokjes");
     SetTargetFPS(60);
 
-    while(!WindowShouldClose() && maingameloop) {
+    while(!WindowShouldClose()) {
         BeginDrawing();
 
         ClearBackground(BLACK);
